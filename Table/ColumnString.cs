@@ -50,6 +50,7 @@ public class ColumnString<TItem> : Column<TItem>
 
     public override void DrawColumn(TItem item, int _)
     {
+        PreDraw();
         ImGui.TextUnformatted(ToName(item));
     }
 }

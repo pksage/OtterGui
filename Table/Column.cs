@@ -26,6 +26,9 @@ public class Column<TItem>
     public virtual int Compare(TItem lhs, TItem rhs)
         => 0;
 
+    public virtual void PreDraw()
+    { }
+
     public virtual void DrawColumn(TItem item, int idx)
     { }
 
